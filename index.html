@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            z-index: 2;
+            opacity: 50%;
+            background-color: #ce93d8;
+        }
+
+        #home::before {
+            
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: url(3160.jpg);
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            z-index: -1;
+            /* important properties */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            scroll-behavior: smooth;
+
+        }
+        
+
+        .myname {
+            color: #f3e5f5;
+
+            font-family: 'Chakra Petch', sans-serif;
+
+            -webkit-animation: glow 10s ease-in-out infinite alternate;
+            -moz-animation: glow 10s ease-in-out infinite alternate;
+            animation: glow 10s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+            }
+        }
+
+        .knowmemore {
+            border-radius: 50%;
+            transition: 1.5s;
+            border: 5px solid purple;
+            background: transparent;
+        }
+
+        .mydescr {
+            color: #f3e5f5;
+        }
+
+        .knowmemore:hover {
+            box-shadow: 0 5px 50px 0 purple inset, 0 5px 50px 0 purple,
+                0 5px 50px 0 purple inset, 0 5px 50px 0 purple;
+        }
+
+        #aboutme::before{
+            position: absolute;
+            top: 100vh;
+            content: "";
+            width: 100%;
+            height: 100vh;
+            background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b3be1dae-3caa-4d45-be6c-3de586ba95e2/deg7i2i-8cbb5fde-f0da-44ea-a28e-3b1462336d3e.jpg/v1/fill/w_1192,h_670,q_70,strp/lit_up_sky_by_bisbiswas_deg7i2i-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYjNiZTFkYWUtM2NhYS00ZDQ1LWJlNmMtM2RlNTg2YmE5NWUyXC9kZWc3aTJpLThjYmI1ZmRlLWYwZGEtNDRlYS1hMjhlLTNiMTQ2MjMzNmQzZS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.s6ObCxDXHUr0A0EPrlee1RZ3aA4prcZ_SA9qm6EwQUw);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            scroll-behavior: smooth;
+            z-index: -1;
+            
+            
+            /* important properties */
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact Me</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home">
+        <section class="myinfo text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+
+                <div class="text-center lg:w-2/3 w-full ">
+                    <h1 class="myname title-font sm:text-7xl text-4xl mb-4 font-medium text-gray-900">I Am SUJAL
+                        CHANDRAKAR</h1>
+                    <p class="myname mb-8 leading-relaxed text-gray-100">The journey of development is just started in
+                        2022. It may be short in term of experience, but skill and effectiveness are my strength that
+                        makes me stand out of the row.I am web developer with having proficiency in backend
+                        development.I have knowledge of NodeJs and MongoDB.</p>
+                    <div class="flex justify-center">
+                        <button
+                            class="knowmemore border inline-flex text-white bg-indigo-500 border-0 py-2 px-6  hover:bg-indigo-600 rounded text-lg border-primary">KNOW
+                            ME MORE</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- <div id="my_name">SUJAL CHANDRAKAR</div>
+        <div id="profile">web developer</div>
+        <div id="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam facere dolores cum neque, enim modi magni culpa numquam sequi consequatur nemo delectus labore ratione eveniet repudiandae doloribus dolor odio in error maxime nostrum! Quos, tempora accusamus! Doloribus fugiat deserunt dolore?</div> -->
+    </div>
+
+    <div id="aboutme">
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+              </div>
+              <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+                  <br class="hidden lg:inline-block">readymade gluten
+                </h1>
+                <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+                <div class="flex justify-center">
+                  <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                  <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
